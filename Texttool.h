@@ -41,8 +41,13 @@ public:
 
 	// return the number of words in the linked list
 	int totalWords() {
-		return -1; // TO BE COMPLETED
-		
+        int words;
+        while (!wordlist->empty())
+        {
+            if(wordlist->front() != "")
+                words++;
+        }
+        return words;
 	}
 
 	// add entry at the back of the linked list
