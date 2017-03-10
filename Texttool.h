@@ -15,14 +15,12 @@ class TextTool {
 public:
 	// default constructor
 	TextTool() {
-		// TO BE COMPLETED
-	
+        wordlist = new list<string>;
 	}
 
 	// destructor
 	~TextTool() {
-		// TO BE COMPLETED
-	
+        delete wordlist;
 	}
 
 	// Load information from a text file with the given filename.
@@ -49,8 +47,7 @@ public:
 
 	// add entry at the back of the linked list
 	void addEntryBack(const string& aword) {
-		// TO BE COMPLETED
-		
+        wordlist->push_back(aword);
 	}
 
 	// print all words stored in the linked list, separated by a space
