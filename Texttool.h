@@ -109,7 +109,12 @@ public:
 
 	// check if the list is empty
 	bool isEmpty() {
-		// TO BE COMPLETED
+        bool isIt;
+        if(wordlist != NULL)
+            isIt = true; // is empty
+        else
+            isIt = false; // isn't empty
+        return isIt;
 	}
 
 	// Empty the list
