@@ -41,7 +41,7 @@ public:
 
 	// return the number of words in the linked list
 	int totalWords() {
-        int words;
+        int words = 0;
         for (list<string>::iterator i = wordlist->begin(); i != wordlist->end(); i++)
         {
             words++;
