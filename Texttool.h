@@ -87,7 +87,7 @@ public:
 
 	// remove duplicated words in the linked
 	void removeDuplicates() {
-		// TO BE COMPLETED
+        wordlist->unique();
 		
 	}
 
