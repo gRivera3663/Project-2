@@ -71,10 +71,15 @@ public:
 
 	// print duplicated words in the linked list
 	void printDuplicates() {
+        string word;
         for (list<string>::iterator i = wordlist->begin(); i != wordlist->end(); i++)
         {
-            string word;
-            cout << *i << " ";
+            
+            if (*i == word)
+            {
+                cout << *i << endl;
+            }
+            word = *i;
         }
         cout << endl;
 		
@@ -88,8 +93,18 @@ public:
 
 	// determine the total number of duplicated words in the list
 	int totalDuplicates() {
-		// TO BE COMPLETED
-		
+        string word;
+        int count = 0;
+        for (list<string>::iterator i = wordlist->begin(); i != wordlist->end(); i++)
+        {
+            
+            if (*i == word)
+            {
+                count++;
+            }
+            word = *i;
+        }
+        return count;
 	}
 
 	// check if the list is empty
