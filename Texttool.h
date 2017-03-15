@@ -119,7 +119,8 @@ public:
 
 	// Empty the list
 	void makeEmpty() {
-		// TO BE COMPLETED
+        delete wordlist;
+        wordlist = new list<string>;
 	}
 
 private:
