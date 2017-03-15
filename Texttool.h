@@ -62,11 +62,17 @@ public:
 
 	// print all words stored in the linked list, separated by a space
 	const string listToString() {
+        string output;
         for (list<string>::iterator i = wordlist->begin(); i != wordlist->end(); i++)
         {
-            cout << *i << " ";
+            if (i == wordlist->begin())
+            {
+                output = *i + " ";
+            }
+            output = output + *i + " ";
         }
         cout << endl;
+        return output;
 	}
 
 	// print duplicated words in the linked list
