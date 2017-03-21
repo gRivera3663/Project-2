@@ -59,10 +59,6 @@ public:
         string output;
         for (list<string>::iterator i = wordlist->begin(); i != wordlist->end(); i++)
         {
-            if (i == wordlist->begin())
-            {
-                output = *i + " ";
-            }
             output = output + *i + " ";
         }
         cout << endl;
@@ -88,7 +84,6 @@ public:
 	// remove duplicated words in the linked
 	void removeDuplicates() {
         wordlist->unique();
-		
 	}
 
 	// determine the total number of duplicated words in the list
