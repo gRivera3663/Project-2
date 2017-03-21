@@ -70,7 +70,6 @@ public:
         string word;
         for (list<string>::iterator i = wordlist->begin(); i != wordlist->end(); i++)
         {
-            
             if (*i == word)
             {
                 cout << *i << endl;
@@ -78,7 +77,6 @@ public:
             word = *i;
         }
         cout << endl;
-		
 	}
 
 	// remove duplicated words in the linked
@@ -92,7 +90,6 @@ public:
         int count = 0;
         for (list<string>::iterator i = wordlist->begin(); i != wordlist->end(); i++)
         {
-            
             if (*i == word)
             {
                 count++;
@@ -119,6 +116,5 @@ public:
 	}
 
 private:
-
 	list<string> *wordlist;
 };
